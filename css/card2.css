@@ -1,0 +1,507 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Open Sans', serif;
+    font-size: 14px
+}
+
+.container-fluid {
+    margin-top: 70px
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.40rem
+}
+
+.img-sm {
+    width: 80px;
+    height: 80px
+}
+
+.itemside .info {
+    padding-left: 15px;
+    padding-right: 7px
+}
+
+.table-shopping-cart .price-wrap {
+    line-height: 1.2
+}
+
+.table-shopping-cart .price {
+    font-weight: bold;
+    margin-right: 5px;
+    display: block
+}
+
+.text-muted {
+    color: #969696 !important
+}
+
+a {
+    text-decoration: none !important
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0px
+}
+
+.itemside {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.dlist-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+[class*="dlist-"] {
+    margin-bottom: 5px
+}
+
+.coupon {
+    border-radius: 1px
+}
+
+.price {
+    font-weight: 600;
+    color: #212529
+}
+
+.btn.btn-out {
+    outline: 1px solid #fff;
+    outline-offset: -5px
+}
+
+.btn-main {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 19px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%
+}
+
+.btn-light {
+    color: #ffffff;
+    background-color: #F44336;
+    border-color: #f8f9fa;
+    font-size: 12px
+}
+
+.btn-light:hover {
+    color: #ffffff;
+    background-color: #F44336;
+    border-color: #F44336
+}
+
+.btn-apply {
+    font-size: 11px
+}
+
+/*----------------------------------------------------------------------*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 5px;
+}
+.container {
+  width: 50%;
+  height: 92vh;
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  background-color: ;
+}
+
+/*
+Payment Information card
+*/
+.details_card {
+  width: 700px;
+  height: 400px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0px;
+  background-color: #fff;
+}
+
+/*
+Order Summary Card
+*/
+.summary_card {
+  background-color: #fff;
+  width: 350px;
+  height: 400px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/*
+Order Card Item Card
+*/
+.card_item {
+  display: flex;
+  position: relative;
+  margin: 10px 0;
+}
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.card_item .product_img img {
+  height: 60px;
+  margin-right: 20px;
+  width: 60px;
+  border-radius: 25px;
+}
+
+.product_info h1 {
+  font-size: 20px;
+  color: #1e212d;
+  margin: 5px 0;
+}
+
+.product_info p {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.product_rate_info {
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+cart item + & -
+*/
+.pqt {
+  font-size: 20px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+.pqt-plus,
+.pqt-minus {
+  background: #fcfcfc;
+  border: none;
+  font-size: 20px;
+  height: 100%;
+  padding: 0 15px;
+}
+.pqt-plus:hover,
+.pqt-minus:hover {
+  background: #53b5aa;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pqt-plus {
+  line-height: 30px;
+}
+
+.pqt-minus {
+  line-height: 30px;
+}
+/*
+Order price & total
+*/
+.order_price,
+.order_service,
+.order_total {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 10px;
+}
+.order_price p,
+.order_service p {
+  color: #a1a1a1;
+}
+
+.order_total p {
+  font-weight: 600;
+}
+
+/*
+Payment Information all input
+*/
+
+input {
+  outline: 0;
+  background: #f2f2f2;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  caret-color: #4f5d7e;
+  margin: 10px 15px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.first_lastName,
+.shipping_card,
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.new_card {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #53b5aa;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.add_savedcard {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #a1a1a1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+/*
+Procced Payment button
+*/
+.proced_payment a {
+  padding: 10px 20px;
+  width: 200px;
+  border: 2px solid #f5f5f5;
+  background-color: #53b5aa;
+  color: #000;
+  margin-left: -150px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: left;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.textstyle {
+    background-color: black; /* Changing background color */
+    font-weight: bold; /* Making font bold */
+    border-radius: 20px; /* Making border radius */
+    width: 10px; /* Making auto-sizable width */
+    height: 40px; /* Making auto-sizable height */
+    padding: 8px 30px 8px 20px; /* Making space around letters */
+    font-size: 18px; /* Changing font size */
+    color: white;
+    
+    /*margin-bottom: 123px;*/
+}
+.card-top{
+  width: 80px;
+  height: 60px;
+  margin-left: 183px;
+  
+}
+.i{
+  margin-left: 112px; 
+  font-size: 22px;
+  font-weight: 600
+}
+
+.credit-card-wrap1{
+  top:-10%;
+  left:20%;
+  border-radius:20px;
+  margin-left:90px;
+  margin-top:-250.5px;
+}
+.per-aut1{
+margin: 23px; margin-left: 113px
+}
+
+.plus-sign{
+  text-align:right;
+  float: right;
+   margin-top: -25px; 
+   font-size: 32px;
+   margin-right: -29px;
+}
+.customm{
+  font-size: 12px;
+   margin-top: -12px;
+   margin-right: -49px;
+}
+.h2h2{
+  border: 2px solid gray; border-radius: 12px; height: 80px;width: 380px;padding-left: 14px;
+  font-weight: 700
+}
+.h3h3{
+  border: 2px solid gray; border-radius: 12px; height: 480px;width: 380px;padding-left: 14px;
+  font-weight: 700
+}
+.h4h4{
+  border: 2px solid gray; border-radius: 12px; height: 240px;width: 380px;padding-left: 14px;
+  font-weight: 700
+}
+.h5h5{
+  border: 2px solid gray; border-radius: 12px; height: 380px;width: 280px;padding-left: 14px;
+  font-weight: 700;margin-top: 104px;
+}
+
+.buttonnn{
+  background-color: blue;
+  color: white;
+  float:right;
+}
+
+/*---------------------model         ---------------------         */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  left: 0;
+  text-align: center;
+  padding-left: 778px;
+  margin-top: 200px;
+  width:88%; /* Full width */
+  height: 1800px; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.0); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  width: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 12px;
+  border:2px solid black;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.modal12{
+  background-color: blue;
+  color: white 
+}
